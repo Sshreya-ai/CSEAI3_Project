@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<!-- 🎠 CAROUSEL START -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+
+    <!-- IMAGE 1 -->
+    <div class="carousel-item active">
+      <div style="height:450px; display:flex; justify-content:center; align-items:center; background:#000;">
+        <img src="{% static 'image/OIP (1).jpg' %}"
+             style="max-height:100%; max-width:100%; object-fit:contain;"
+             alt="image1">
+      </div>
+    </div>
+
+    <!-- IMAGE 2 -->
+    <div class="carousel-item">
+      <div style="height:450px; display:flex; justify-content:center; align-items:center; background:#000;">
+        <img src="{% static 'image/OIP (2).jpg' %}"
+             style="max-height:100%; max-width:100%; object-fit:contain;"
+             alt="image2">
+      </div>
+    </div>
+
+    <!-- IMAGE 3 -->
+    <div class="carousel-item">
+      <div style="height:450px; display:flex; justify-content:center; align-items:center; background:#000;">
+        <img src="{% static 'image/OIP.jpg' %}"
+             style="max-height:100%; max-width:100%; object-fit:contain;"
+             alt="image3">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONTROLS -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+<!-- 🎠 CAROUSEL END -->
+
+
+<!-- 👇 MARKETING SECTION (unchanged) -->
+<div class="my-5 container marketing">
+
+  <div class="row">
+
+    <div class="col-lg-4">
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+      </svg>
+
+      <h2 class="fw-normal">Heading</h2>
+      <p>Some representative placeholder content for the three columns below the carousel.</p>
+      <p><a class="btn btn-secondary" href="#">View details »</a></p>
+    </div>
+
+    <div class="col-lg-4">
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+      </svg>
+
+      <h2 class="fw-normal">Heading</h2>
+      <p>Another exciting bit of representative placeholder content.</p>
+      <p><a class="btn btn-secondary" href="#">View details »</a></p>
+    </div>
+
+    <div class="col-lg-4">
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+      </svg>
+
+      <h2 class="fw-normal">Heading</h2>
+      <p>And lastly this, the third column of content.</p>
+      <p><a class="btn btn-secondary" href="#">View details »</a></p>
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock content %}
